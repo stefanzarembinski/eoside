@@ -1,0 +1,62 @@
+{
+    "name": "eosfactory",
+    "description": "EOS Factory VS Code extension",
+    "version": "0.0.1",
+    "publisher": "ms-vscode",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*",
+        "onCommand:eosfactory.getStarted"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "eosfactory.getStarted",
+                "title": "Get Started",
+                "category": "EOS Factory"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "eosfactory.getStarted",
+                    "group": "navigation"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "eosfactory.getStarted",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "configurationDefaults": {
+            "terminal.integrated.shell.windows": "bash.exe",
+            "workbench.colorTheme": "Visual Studio Dark",
+            "[markdown]": {
+                "editor.wordWrap": "on",
+                "editor.quickSuggestions": false
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -p ./",
+        "watch": "tsc -w -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "dependencies": {
+        "openurl": "^1.1.1",
+        "vscode": "^1.1.18"
+    },
+    "devDependencies": {
+        "@types/node": "^10.5.2",
+        "typescript": "^2.9.2"
+    }
+}

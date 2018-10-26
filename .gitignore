@@ -1,0 +1,24 @@
+
+vscode_ext/node_modules
+eoside.egg-info/dependency_links.txt
+
+# Compiled python modules.
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+
+NOTES.md
+package-lock.json
+vscode_ext/.vscode
+vscode_ext/out
+vscode_ext/media/tokenika_eos factory_by_tokenika_logo_72dpi_01.png
+vscode_ext/media/tokenika_eos factory_by_tokenika_logo_72dpi_02.png
+vscode_ext/media/tokenika_eos factory_logo_72dpi_-01.png
+vscode_ext/media/tokenika_eos factory_logo_72dpi_-02.png
+vscode_ext/test.html
+vscode_ext/test1.html
