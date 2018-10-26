@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+eoside/__init__.py
+eoside/create_project.py
+eoside/server.py
+eoside.egg-info/PKG-INFO
+eoside.egg-info/SOURCES.txt
+eoside.egg-info/dependency_links.txt
+eoside.egg-info/not-zip-safe
+eoside.egg-info/requires.txt
+eoside.egg-info/top_level.txt

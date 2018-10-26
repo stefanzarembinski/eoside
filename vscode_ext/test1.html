@@ -1,0 +1,174 @@
+"<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Get Started EOSFactory</title>
+    <meta charset="utf-8">
+
+    <!--
+    Use a content security policy to only allow loading images from https 
+    or from our extension directory,
+    and only allow scripts that have a specific nonce.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        script-src 'nonce-bDruJSZs6PqtD6bbrtFlixvdVOqgZewt' 'unsafe-inline';
+        style-src 'unsafe-inline';
+        img-src vscode-resource: https:; 
+        ">
+
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="vscode-resource:/c%3A/Workspaces/EOS/eoside/vscode_ext/media/">
+    <title>EOSFactory start page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .body {
+            background-color: rgb(30, 30, 30);
+            color: rgb(83, 157, 241);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13;
+        }
+
+        .clickable {
+            background-color: unset;
+            color: unset;
+            border: 0px;
+            text-align: left;
+            font-family: unset;
+            font-size: unset;        
+        }
+
+        .clickable:hover {
+            color: rgb(150, 150, 150);
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 60%;
+            padding: 10px;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 40%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <script nonce="bDruJSZs6PqtD6bbrtFlixvdVOqgZewt" src="vscode-resource:/c%3A/Workspaces/EOS/eoside/vscode_ext/media/main.js"></script>
+
+    <div class="row">
+        <div style="float:left">
+            <img src="tokenika.png" 
+                alt="Tokenika" 
+                style="height:200px; padding: 10px">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="leftcolumn">
+            <div>
+                <p style="
+                    color: unset;
+                    font-size: 40px;
+                ">Get Started</p>
+
+                
+            <a href="file:///C:/Workspaces/EOS/eosfactory/docs/tutorials/00.IntroductionToEOSFactory.html">
+                Introduction to EOSFactory</a><br>
+            <a href="docs/03.BuildingAndDeployingEOSContractsInEOSFactory.html">
+                Building and deploying EOS Contracts in EOSFactory</a><br>
+            <a href="http://eosfactory.io/build/html/tutorials/05.InteractingWithPublicTestnet.html">
+                Interacting with Public Testnet</a><br>
+            </div>
+            <div>
+                <p style="
+                    color: unset;
+                    font-size: 40px;
+                ">Recent</p>
+
+                <label id="C:\Workspaces\EOS\contracts\hello_world" 
+                title=recent class="clickable">
+                C:\Workspaces\EOS\contracts\hello_world
+            </label><br><label id="C:\Workspaces\EOS\contracts\hhhhh" 
+                title=recent class="clickable">
+                C:\Workspaces\EOS\contracts\hhhhh
+            </label><br><label id="C:\Workspaces\EOS\contracts\kkk" 
+                title=recent class="clickable">
+                C:\Workspaces\EOS\contracts\kkk
+            </label><br><label id="c:\Workspaces\EOS\contracts\zzzzz" 
+                title=recent class="clickable">
+                c:\Workspaces\EOS\contracts\zzzzz
+            </label><br><label id="c:\Workspaces\EOS\contracts\resde" 
+                title=recent class="clickable">
+                c:\Workspaces\EOS\contracts\resde
+            </label><br><label id="c:\Workspaces\EOS\contracts\empty" 
+                title=recent class="clickable">
+                c:\Workspaces\EOS\contracts\empty
+            </label><br><label id="c:\Workspaces\EOS\contracts\ggggg" 
+                title=recent class="clickable">
+                c:\Workspaces\EOS\contracts\ggggg
+            </label><br><label id="c:\Workspaces\EOS\contracts\yyyy" 
+                title=recent class="clickable">
+                c:\Workspaces\EOS\contracts\yyyy
+            </label><br>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div>
+                <p style="
+                    color: white;
+                    font-size: 25px;
+                ">Open</p>
+
+                <label id="open_project" title="open" class="clickable" >
+                    Open an existing project
+                </label><br>
+                <label id="open_folder" title="open" class="clickable" >
+                    Open an existing folder
+                </label><br>
+
+            </div>
+            <div>
+                <p style="
+                    color: white;
+                    font-size: 25px;
+                ">New
+                    project</p>
+
+                <label id="empty_project" 
+                title=template class="clickable">
+                empty project
+            </label><br><label id="eosio_token" 
+                title=template class="clickable">
+                eosio token
+            </label><br><label id="hello_world" 
+                title=template class="clickable">
+                hello world
+            </label><br><label id="tic_tac_toe" 
+                title=template class="clickable">
+                tic tac toe
+            </label><br>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>"
